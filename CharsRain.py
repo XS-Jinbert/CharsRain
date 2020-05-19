@@ -36,12 +36,12 @@ bg_suface.fill(pygame.Color(0, 0, 0, 28))
 win.fill((0, 0, 0))
 
 
-chars = ['q', 'w', 'e', 'r', 't', 'y', 'u', 'i', 'o', 'p', 'a', 's', 'd', 'f', 'g', 'h', 'j', 'k', 'l', 'z', 'x', 'c',
-         'v', 'b', 'n', 'm', '0', '1', '2', '3', '4', '5', '6', '7', '8', '9']
-
+# chars = ['q', 'w', 'e', 'r', 't', 'y', 'u', 'i', 'o', 'p', 'a', 's', 'd', 'f', 'g', 'h', 'j', 'k', 'l', 'z', 'x', 'c',
+#          'v', 'b', 'n', 'm', '0', '1', '2', '3', '4', '5', '6', '7', '8', '9']
+chars = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9']
 texts = [
     # 创建文本surface图像@来自pygame.font.SysFont.render  并将字体设置为绿色
-    font.render(str(chars[i]), False, (0, 255, 0)) for i in range(26)   # for循环赋值用法
+    font.render(str(chars[i]), False, (0, 255, 0)) for i in range(10)   # for循环赋值用法
 ]
 
 # 按屏幕的宽带计算可以在画板上放几列坐标并生成一个列表
